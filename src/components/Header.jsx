@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-const Header = () => {
+const Header = ({name}) => {
     const [mode, setMode] = useState(true);
-
+    name(mode);
     const handleMode = () => {
         setMode(!mode);
     }
