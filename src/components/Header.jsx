@@ -13,11 +13,10 @@ const Header = (props) => {
 
     return (
         <header
-            className={`py-4 ${
-                mode
+            className={`py-4 ${mode
                     ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
                     : 'bg-gray-900 text-gray-300'
-            }`}
+                }`}
         >
             <div className="container mx-auto flex items-center justify-between px-6">
                 {/* App Title */}
@@ -27,24 +26,24 @@ const Header = (props) => {
                     </a>
                 </div>
 
-                {/* Mode Toggle Button */}
                 <div>
                     {mode ? (
                         <button
-                            className="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-700 transition"
+                            className="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-700 transition w-full sm:w-auto"
                             onClick={handleMode}
                         >
                             🌙 Dark Mode
                         </button>
                     ) : (
                         <button
-                            className="px-6 py-3 bg-gray-200 text-black rounded-lg shadow-md hover:bg-gray-300 transition"
+                            className="px-6 py-3 bg-gray-200 text-black rounded-lg shadow-md hover:bg-gray-300 transition w-full sm:w-auto"
                             onClick={handleMode}
                         >
                             🌞 Light Mode
                         </button>
                     )}
                 </div>
+
             </div>
         </header>
     );
