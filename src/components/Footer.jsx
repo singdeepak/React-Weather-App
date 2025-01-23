@@ -63,7 +63,7 @@ const Footer = ({ mode }) => {
                         mode ? 'text-white' : 'text-gray-400'
                     }`}
                 >
-                    &copy; 2025 Your Company. All Rights Reserved.
+                    &copy; 2025 Deepak Singh. All Rights Reserved.
                 </p>
             </div>
         </footer>
