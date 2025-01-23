@@ -14,8 +14,8 @@ const Header = (props) => {
     return (
         <header
             className={`py-4 ${mode
-                    ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
-                    : 'bg-gray-900 text-gray-300'
+                ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
+                : 'bg-gray-900 text-gray-300'
                 }`}
         >
             <div className="container mx-auto flex items-center justify-between px-6">
@@ -29,20 +29,21 @@ const Header = (props) => {
                 <div>
                     {mode ? (
                         <button
-                            className="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-700 transition w-full sm:w-auto"
+                            className="px-4 py-2 sm:px-6 sm:py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-700 transition w-full sm:w-auto text-sm sm:text-base"
                             onClick={handleMode}
                         >
                             🌙 Dark Mode
                         </button>
                     ) : (
                         <button
-                            className="px-6 py-3 bg-gray-200 text-black rounded-lg shadow-md hover:bg-gray-300 transition w-full sm:w-auto"
+                            className="px-4 py-2 sm:px-6 sm:py-3 bg-gray-200 text-black rounded-lg shadow-md hover:bg-gray-300 transition w-full sm:w-auto text-sm sm:text-base"
                             onClick={handleMode}
                         >
                             🌞 Light Mode
                         </button>
                     )}
                 </div>
+
 
             </div>
         </header>
